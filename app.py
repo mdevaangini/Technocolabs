@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf_vec = TfidfVectorizer(max_df=0.7,stop_words='english')
 
 
-app=Flask(__name__, template_folder='template')
+app=Flask(__name__, template_folder='templates')
 model=pickle.load(open('model.pkl', 'rb'))
 
 def get_input(inp):
